@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="itm_donName">
+		<item>1,000원</item>
+		<item>5,000원</item>
+		<item>10,000원</item>
+		<item>50,000원</item>
+	</string-array>
+	<string-array name="itm_donId">
+		<item>dn_1000won</item>
+		<item>dn_5000won</item>
+		<item>dn_10000won</item>
+		<item>dn_50000won</item>
+	</string-array>
+
+	<string-array name="gv_sectionG">
+		<item></item>
+		<item>가</item>
+		<item>나</item>
+		<item>다</item>
+		<item>라</item>
+		<item>마</item>
+		<item>바</item>
+		<item>사</item>
+		<item>아</item>
+		<item>자</item>
+		<item>차</item>
+		<item>카</item>
+		<item>타</item>
+		<item>파</item>
+		<item>하</item>
+		<item>힣</item>
+	</string-array>
+	<string-array name="gv_sectionV">
+		<item># 0-9 A-z</item>
+		<item>ㄱ</item>
+		<item>ㄴ</item>
+		<item>ㄷ</item>
+		<item>ㄹ</item>
+		<item>ㅁ</item>
+		<item>ㅂ</item>
+		<item>ㅅ</item>
+		<item>ㅇ</item>
+		<item>ㅈ</item>
+		<item>ㅊ</item>
+		<item>ㅋ</item>
+		<item>ㅌ</item>
+		<item>ㅍ</item>
+		<item>ㅎ</item>
+	</string-array>
+</resources>

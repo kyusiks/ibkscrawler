@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true" >
+
+    <TextView
+        android:id="@+id/txt_section"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/sty_gradation"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:text="Section"
+        android:textColor="#FFFFFFFF"
+        android:textSize="11dp" />
+
+    <RelativeLayout
+        android:id="@+id/lay_mm"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txt_section" >
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/lay_listBtn"
+            android:layout_toRightOf="@+id/web_thumb"
+            android:text="제목"
+			android:shadowColor="#FF000000"
+			android:shadowDx="1.0"
+			android:shadowDy="1.0"
+			android:shadowRadius="1.0"
+            android:textSize="17dp" />
+
+        <WebView
+            android:id="@+id/web_thumb"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:id="@+id/img_site"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" />
+
+        <ImageView
+            android:id="@+id/img_fin"
+            android:layout_width="15dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_fin" />
+
+        <ImageView
+            android:id="@+id/img_new"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/ic_new" />
+
+        <FrameLayout
+            android:id="@+id/lay_listBtn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" >
+
+            <Button
+                android:id="@+id/btn_list_01"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="19dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/ic_add_b" />
+
+            <CheckBox
+                android:id="@+id/chk_list_02"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="19dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginTop="19dp"
+                android:checked="false" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">웹툰크롤러</string>
+    <string name="str_donTitle">웹툰크롤러 후원</string>
+    <string name="action_settings">Settings</string>
+    <string name="str_yes">네, 그럴께요!</string>
+    <string name="str_no">아니요, 안할래요.</string>
+    <string name="str_rusure">정말요?</string>
+    <string name="str_gudokCancle">[내가 보는 웹툰]에서 삭제 할까요?</string>
+    <string name="str_gudokAdd">[내가 보는 웹툰]에 추가할까요?</string>
+    <string name="str_myList">내가 보는 웹툰</string>
+    <string name="str_dbClear">[내가 보는 웹툰]이 초기화되요. 초기화 할까요?</string>
+    <string name="str_search">검색</string>
+    <string name="str_favo">인기웹툰</string>
+    <string name="str_setting">설정</string>
+    <string name="str_searchWords">의 검색 결과</string>
+    <string name="str_confirmUpdating">업데이트된 내용을 확인하고 있어요.</string>
+    <string name="str_confirmUpdated">업데이트된 내용을 보여드릴께요.</string>
+    <string name="str_atLast">가장 최근회에요.</string>
+    <string name="str_atFirst">가장 첫회에요.</string>
+    <string name="str_oneMoreFinish">[뒤로]버튼을 한번 더 누르시면 종료되요.</string>
+    <string name="str_noSearchData">검색된 웹툰이 없어요 ㅠㅠ</string>
+    <string name="str_alert">알려요!</string>
+    <string name="str_noMyList">내가 보는 웹툰을 추가해 보세요!</string>
+    <string name="str_firstLoading">웹툰크롤러가 버전업!했어요. \n최적화작업 진행할께요. 잠시만요!</string>
+    <string name="str_ibkscrawlerFavo">웹툰크롤러추천웹툰</string>
+</resources>

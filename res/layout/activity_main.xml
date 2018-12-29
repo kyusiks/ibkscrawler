@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout11"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sty_gradation_main" >
+
+	<TextView
+	    android:id="@+id/txt_nav"
+	    android:layout_width="match_parent"
+	    android:layout_height="15dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:background="@drawable/sty_gradation"
+	    android:gravity="center_vertical"
+	    android:paddingLeft="5dp"
+	    android:paddingRight="5dp"
+	    android:text="Nav>"
+	    android:textColor="#FFFFFFFF"
+	    android:textSize="11dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+    	android:id="@+id/main_search"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txt_nav">
+
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="32dp"
+	        android:layout_margin="1dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	  		android:background="@drawable/sty_roundingborder" >
+
+	        <EditText
+	            android:id="@+id/edt_search"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:layout_toRightOf="@+id/img_search"
+	            android:background="#00FFFFFF"
+	            android:textColor="#FFFFFFFF"
+	            android:textSize="11dp" >
+
+	            <requestFocus />
+	        </EditText>
+
+	        <ImageView
+	            android:id="@+id/img_search"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="10dp"
+	            android:src="@drawable/ic_search" />
+
+
+    	</RelativeLayout>
+
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/sty_gradationline" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutInnerBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+		        
+	        <Button
+	            android:id="@+id/btn_myList"
+	            android:layout_width="32dp"
+	            android:layout_height="32dp"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginRight="40dp"
+	            android:background="@drawable/ic_mn_mylist_b" />
+	
+	
+	        <Button
+	            android:id="@+id/btn_search"
+	            android:layout_width="32dp"
+	            android:layout_height="32dp"
+	            android:layout_alignParentTop="true"
+	            android:layout_toRightOf="@+id/btn_myList"
+	            android:background="@drawable/ic_mn_add_b" />
+	        
+	        <Button
+	            android:id="@+id/btn_favo"
+	            android:layout_width="32dp"
+	            android:layout_height="32dp"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="40dp"
+	            android:layout_toRightOf="@+id/btn_search"
+	            android:background="@drawable/ic_mn_favo_b" />
+	
+	        <Button
+	            android:id="@+id/btn_menuSetting"
+	            android:layout_width="32dp"
+	            android:layout_height="32dp"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="40dp"
+	            android:layout_toRightOf="@+id/btn_favo"
+	            android:background="@drawable/ic_mn_setting_b" />
+        
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_menu"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/img_arrow" />
+    
+    <TextView
+        android:id="@+id/txt_noMyList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/img_arrow"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/sty_roundingborder"
+        android:padding="10dp"
+        android:text="@string/str_noMyList" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_menu"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/main_search"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/sty_gradationline"
+        android:dividerHeight="2dp"
+        android:fastScrollEnabled="true" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/txt_section_main"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@+id/main_search"
+        android:background="@drawable/sty_gradation"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Section"
+        android:textColor="#FFFFFFFF"
+        android:textSize="11dp" />
+
+</RelativeLayout>

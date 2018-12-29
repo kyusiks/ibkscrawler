@@ -1,0 +1,170 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lay_rel_viewMode"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/lay_rel_viewModeView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <WebView
+                android:id="@+id/web_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txt_view_nav"
+                android:scrollbars="horizontal|vertical" />
+
+            <TextView
+                android:id="@+id/txt_view_nav"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/sty_gradation"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Nav>"
+                android:textColor="#FFFFFFFF"
+                android:textSize="11dp" />
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/ll_menuBottom_smp"
+            android:layout_gravity="bottom"
+	        android:layout_width="match_parent"
+            android:layout_height="40dp" >
+
+            <RelativeLayout
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="#bb41638a" >
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="#bb41638a" >
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btn_nav_menu"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/ic_menu_b"/>
+
+            <Button
+                android:id="@+id/btn_nav_smp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_next_b" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_menuBottom"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="40dp"
+            android:background="#bb41638a"
+            android:orientation="vertical"
+            android:textColor="#ff000000" >
+
+            <RelativeLayout
+            	android:id="@+id/ll_menuBottomRelative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:id="@+id/btn_bottomMyList"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/ic_mn_mylist_b" />
+
+                <Button
+                    android:id="@+id/btn_bottomSearch"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/btn_bottomMyList"
+                    android:background="@drawable/ic_mn_add_b" />
+
+                <Button
+                    android:id="@+id/btn_bottomAdd"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/btn_bottomSearch"
+                    android:background="@drawable/ic_add_b" />
+
+                <Button
+                    android:id="@+id/btn_bottomPrevMax"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/btn_bottomAdd"
+                    android:background="@drawable/ic_pre_max_b" />
+                
+                
+                
+                
+                <Button
+                    android:id="@+id/btn_bottomPrev"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_pre_b" />
+
+                <Spinner
+                    android:id="@+id/cbo_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/btn_bottomPrev"
+                    android:layout_toRightOf="@+id/btn_bottomNextMax"
+					android:textColor="#FFFFFFFF"
+                    android:background="@drawable/sty_roundingborder" />
+
+                <Button
+                    android:id="@+id/btn_bottomReload"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/btn_bottomPrevMax"
+                    android:background="@drawable/ic_reload_b" />
+
+                <Button
+                    android:id="@+id/btn_bottomNextMax"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/btn_bottomReload"
+                    android:background="@drawable/ic_next_max_b" />
+
+            </RelativeLayout>
+        </LinearLayout>
+        
+    </FrameLayout>
+</LinearLayout>
